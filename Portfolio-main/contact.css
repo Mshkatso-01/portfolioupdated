@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    background-color:  #191e39;
+}
+body{
+    margin: 1em;
+}
+#contacts{
+    text-align: center;
+}
+#contacts h1{
+    padding: 1em;
+    font-size: 30px;
+    font-weight: 600;
+    color: #FF6565;
+    text-transform: capitalize;
+}
+#contacts span{
+    color: #FF6565;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+/* form{
+    display: block;
+    padding: 2em;
+    width: min-content;
+} */
+input{
+    padding: 1em;
+}
+label
+{
+    margin: 2em;
+    position: relative;
+    left: 0;
+}
+.contact-input{
+    font-style: bond;
+}
+#contactUs{
+    text-align: center;
+}
+.socialMedia{
+   grid-column: 2;
+   margin-top: 2em;
+   margin-bottom: 2em;
+   text-align: center;
+
+}
+.social-icons i{
+    color: #FF6565;
+    margin-right: 1em;
+    margin-top: 2em;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 2em;
+    width:100%;
+}
+.form input{
+    border:none;
+    outline: none;
+    width: 20em;
+    border-bottom: 1px solid lightgray;
+}
+.form textarea{
+    border: none;
+    outline: none;
+    resize: none;
+    border-bottom: 1px solid lightgray;
+    width: 20em;
+
+
+}
+.form button{
+    text-transform: uppercase;
+    margin: 2em;
+    padding: 1em;
+    border-color: transparent;
+    border-color: lightgray;
+    background-color: #191e39;
+    color: #FF6565;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 20px;
+}
+.form button:hover{
+    background-color:#FF6565;
+    color: #191e39;
+}
+::placeholder{
+    color: #FFFFFF;
+}
+.contact-input{
+    font-style: bond;
+    color: #FF6565;
+}
+#contactUs{
+    text-align: center;
+} 
+footer h4{
+    color: #FF6565;
+    margin-top: 2em;
+}
+footer i{
+    color: #FF6565;
+    padding-right: 1em;
+}
+footer a{
+    margin-left: 1em;
+    color: #ffffff;
+    line-height: 2em;
+    text-decoration: none;
+}
+footer p{
+    padding: 1em;
+    text-align: center;
+}
+p .mishkat{
+    color: #FF6565;
+}
+form input{
+    visibility: visible;
+}

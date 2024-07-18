@@ -1,0 +1,122 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #191e39;
+    color: #FFFFFF;
+    margin: 1em;
+    line-height: 1.2em;
+}
+img{
+    border-radius: 20%;
+    border:#FF6565 groove .2em ;
+    width: 200px;
+    text-align: center;
+    margin: 2em 1em 3em 6em;
+}
+
+#introduction p{
+    text-align:center;
+    font-size: 20px;
+}
+#information article{
+    margin-top: 2em;
+    background-color: #FFFFFF;
+    color: #191e39;
+    margin: 2em 0em;
+    border-radius: 2em;
+}
+article h3{
+
+    /* margin: 0 2em; */
+    font-size: 20px;
+    font-weight: 700;
+    padding: 1em;
+    color: #FF6565;
+    background-color: lightgray;
+    color: #191e39;
+    text-align: center;
+    width: 100%;
+}
+article h4, p{
+    margin: 1em;
+    padding-bottom: 1em;
+}
+article p{
+    text-align: justify;
+}
+article ul{
+    display: grid;
+    grid-template-columns: auto auto  ;
+    background-color: #FFFFFF;
+}
+article ul li{
+    background-color: #191e39;
+    width: 8em;
+    margin: 1em;
+    /* padding: .2em; */
+    padding-left: .8em;
+    border-radius: 1em;
+    font-weight: 500;
+    color: #FF6565;
+    text-align:center;
+    list-style:none;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+}
+#information .education{
+    background-color: #191e39;
+    color: #FFFFFF;
+}
+#information .education h4{
+    color: #FF6565;
+}
+b{
+    color: #FF6565;
+    font-size: 20px;
+}
+footer h4{
+    color: #FF6565;
+    margin-top: 2em;
+}
+footer i{
+    color: #FF6565;
+    padding-right: 1em;
+}
+footer a{
+    margin-left: 1em;
+    color: #ffffff;
+    line-height: 2em;
+    text-decoration: none;
+}
+footer p{
+    padding: 1em;
+    text-align: center;
+}
+p .mishkat{
+    color: #FF6565;
+}
+@media (min-width:500px){
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer hr{
+        visibility: hidden;
+    }
+    footer h4{
+        margin: 1em;
+        margin-right: 2em;
+        font-size: 20px;
+        
+    }
+}
+@media (max-width:500px){
+    main{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}

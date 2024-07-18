@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #ffffff;
+    background-color: #191e39;
+    margin: 1em;
+    
+}
+img{
+    width: 300px;
+text-align: center;
+border-radius: 5%;
+border: #FF6565 solid ;
+}
+.smile{
+    color: #FF6565;
+    background-color: #191e39;
+}
+#projects p, h3{
+    text-align: center;
+}
+#projects article{
+    color: #191e39;
+    background-color: #FFFFFF;
+    margin: 2em 0em;
+    border-radius: 2em;
+}
+h1{
+    padding: 1em;
+    text-align: center;
+    font-size: 2.5em;
+    color: #FF6565;
+    text-transform: uppercase;
+}
+h2{
+    padding: 1em;
+    text-align: center;
+    color: #191e39;
+}
+#projects p{
+    margin-top: 1em;
+    line-height: 1.2em;
+
+}
+#projects button{
+    background-color: #191e39;
+    position: relative;
+    padding: .5em;
+    margin: 2em;
+    border-radius: .8em;
+}
+span{
+    color: #FF6565;
+   
+}
+
+
+#projects a{
+    color: #FF6565;
+    text-decoration: none;
+    font-size: 1em;
+}
+.project{
+    padding: 1em;
+    background-color: #191e39;
+}
+footer h4{
+    color: #FF6565;
+    margin-top: 2em;
+}
+footer i{
+    color: #FF6565;
+    padding-right: 1em;
+}
+footer a{
+    margin-left: 1em;
+    color: #ffffff;
+    line-height: 2em;
+    text-decoration: none;
+}
+footer p{
+    padding: 1em;
+    text-align: center;
+}
+p .mishkat{
+    color: #FF6565;
+}
+#projects button{
+    display: block;
+    margin: auto;
+}

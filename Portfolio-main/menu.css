@@ -1,0 +1,97 @@
+@media (max-width:450px){
+    *,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+:root{
+    --bar-width: 60px;
+    --bar-height:8px;
+    --hambergur-gap: 6px;
+    --foreground:  #191e39;
+    --background:#FF6565;
+    --humbergur-margin: 8px;
+    --animation-timing: 200ms ease-in-out;
+    --hambergur-height: calc(var(--bar-height) * 3 + var(--hambergur-gap) * 2)
+
+}
+.hambergur-menu::before,
+.hambergur-menu::after,
+.hambergur-menu input{
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--background);
+    border-radius: 9999px;
+    transition: obacity var(animation-timing), width var(animation-timing), background-color var(--animation-timing);
+    transform-origin: left center;
+    
+
+}
+.hambergur-menu{
+    display: flex;
+    flex-direction: column;
+    gap: var(--hambergur-gap);
+    width: max-content;
+    position: absolute;
+    top: var(--humbergur-margin);
+    left: var(--humbergur-margin);
+    z-index: 2;
+    cursor: pointer;
+    --x-width: calc(var(--hambergur-height) * 1.41421356237)
+
+}
+.hambergur-menu input{
+    appearance: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    pointer-events: none;
+}
+.hambergur-menu input:checked{
+    opacity: 0;
+    width: 0;
+}
+.hambergur-menu:has(input:checked){
+    --foreground : var(--foreground);
+    --background:var(--foreground);
+}
+.hambergur-menu:has(input:focus-visible)::before,
+.hambergur-menu:has(input:focus-visible)::after,
+.hambergur-menu:has(input:focus-visible){
+    border: 1px solid var(--foreground);
+    box-shadow: 0 0 0 1px var(--background);
+}
+.hambergur-menu:has(input:checked)::before{
+    rotate: 45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / -2);
+}
+.hambergur-menu:has(input:checked)::after{
+    rotate: -45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / 2);
+}
+.hambergur-menu input:checked{
+    width: 0;
+    opacity: 0;
+}
+.sidebar{
+    transition: translate var(--animation-timing);
+    translate: -100%;
+    padding: 0.5rem 1 rem;
+    padding-top: calc(var(--hambergur-height));
+    background-color: var(--foreground);
+    color: var(--foreground);
+    max-width: 10rem;
+    height: 10vh;
+    line-height: 40px;
+    cursor: pointer;
+}
+.hambergur-menu:has(input:checked) + .sidebar{
+    translate: 0;
+}
+}
